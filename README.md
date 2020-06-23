@@ -18,7 +18,7 @@ Env vars needed to run the image and make the synchronization :
 
 ## Example:
 
-Let's say we have a project on github at `git@github.com:my/project.git`
+Let's say we have a project on github at `git@github.com:my/project.git`  
 The project contains a directory named `subdir`, we want to sync all the commits related with this directory to a standalone repository at `git@github.com:my/project-subdir.git`
 ```shell script
 docker run --rm -e SSH_KEYSCAN_HOST=github.com -e SSH_KEY="$(cat ~/.ssh/ssh_key_for_github)" -e SOURCE_REPOSITORY="git@github.com:my/project.git" -e SOURCE_BRANCH="master" -e SOURCE_SPLIT_DIR="subdir" -e DESTINATION_REPOSITORY="git@github.com:my/project-subdir.git" alunys/docker-splitsh-lite
