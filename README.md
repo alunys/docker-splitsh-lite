@@ -3,9 +3,9 @@
 See [https://github.com/splitsh/lite](https://github.com/splitsh/lite)
 
 ## Description
-Repository for a [docker image](https://hub.docker.com/r/alunys/docker-splitsh-lite) containing [splitsh-lite](https://github.com/splitsh/lite) binary, which creates standalone repositories for one or more sub-directories of a main repository.
+Repository for a [docker image](https://hub.docker.com/r/alunys/docker-splitsh-lite) containing [splitsh-lite](https://github.com/splitsh/lite) binary, which creates standalone git repositories for one or more sub-directories of a main repository.
 
-Running the image enables to easily sync a sub-directory of the main repository to a standalone repository.  
+For a given git repository of one project, running the image enables to easily sync a sub-directory of the project to a dedicated standalone git repository.  
 
 ## Vars
 Env vars needed to run the image and make the synchronization :
